@@ -1,6 +1,6 @@
 <?php
 
-if (!empty($_POST["msform"])) {
+if (!empty($_POST["submit"])) {
     $servername = "localhost:8889";
     $username = "root";
     $password = "root";
@@ -11,10 +11,10 @@ if (!empty($_POST["msform"])) {
     }
     $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . $_POST["premios"] . "'";
     $result = $conn->query($sql);
-    $valor;
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
+            global $valor;
             $valor = $row["valor"] ;
         }
     } else {
@@ -26,7 +26,8 @@ if (!empty($_POST["msform"])) {
     VALUES ('" . $_POST["nombres"] . "', '" . $_POST["ciudad"] . "', '" . $_POST["telefono"] . "','" . $_POST["email"] . "','" . $_POST["premios"] . "','" . $_POST["codigo"] . "')";
 
     if (mysqli_query($conn, $sql)) {
-        $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" . $_POST["premio"] . "'";
+        $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" . $_POST["premios"] . "'";
+        echo $sql;
         $connnn = mysqli_connect($servername, $username, $password, $dbname);
         if (mysqli_query($conn, $sql)) {
             # code...

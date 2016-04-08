@@ -25,19 +25,19 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32423207">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.51194537">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
               <folding>
-                <marker date="1460137940000" expanded="true" signature="317:362" placeholder="SELECT `valo... premio" />
-                <marker date="1460137940000" expanded="true" signature="317:388" placeholder="SELECT `valo... premio" />
-                <marker date="1460137940000" expanded="true" signature="686:959" placeholder="INSERT INTO `bunky`.`registro`... " />
-                <marker date="1460137940000" expanded="true" signature="1016:1075" placeholder="UPDATE `prem... " />
-                <marker date="1460137940000" expanded="true" signature="1016:1100" placeholder="UPDATE `prem... " />
-                <marker date="1460137940000" expanded="true" signature="1016:2706" placeholder="UPDATE `prem... " />
-                <marker date="1460137940000" expanded="true" signature="1458:1484" placeholder="..." />
-                <marker date="1460137940000" expanded="true" signature="1465:1484" placeholder="..." />
-                <marker date="1460137940000" expanded="true" signature="1641:1691" placeholder="..." />
-                <marker date="1460137940000" expanded="true" signature="3086:3122" placeholder="SELECT id, n... premio" />
+                <marker date="1460139054000" expanded="true" signature="317:362" placeholder="SELECT `valo... premio" />
+                <marker date="1460139054000" expanded="true" signature="317:388" placeholder="SELECT `valo... premio" />
+                <marker date="1460139054000" expanded="true" signature="701:974" placeholder="INSERT INTO `bunky`.`registro`... " />
+                <marker date="1460139054000" expanded="true" signature="1031:1090" placeholder="UPDATE `prem... " />
+                <marker date="1460139054000" expanded="true" signature="1031:1116" placeholder="UPDATE `prem... " />
+                <marker date="1460139054000" expanded="true" signature="1031:2741" placeholder="UPDATE `prem... " />
+                <marker date="1460139054000" expanded="true" signature="1493:1519" placeholder="..." />
+                <marker date="1460139054000" expanded="true" signature="1500:1519" placeholder="..." />
+                <marker date="1460139054000" expanded="true" signature="1676:1726" placeholder="..." />
+                <marker date="1460139054000" expanded="true" signature="3121:3157" placeholder="SELECT id, n... premio" />
               </folding>
             </state>
           </provider>
@@ -48,8 +48,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/script.sql" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -196,19 +196,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32423207">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.51194537">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding>
-            <marker date="1460137940000" expanded="true" signature="317:362" placeholder="SELECT `valo... premio" />
-            <marker date="1460137940000" expanded="true" signature="317:388" placeholder="SELECT `valo... premio" />
-            <marker date="1460137940000" expanded="true" signature="686:959" placeholder="INSERT INTO `bunky`.`registro`... " />
-            <marker date="1460137940000" expanded="true" signature="1016:1075" placeholder="UPDATE `prem... " />
-            <marker date="1460137940000" expanded="true" signature="1016:1100" placeholder="UPDATE `prem... " />
-            <marker date="1460137940000" expanded="true" signature="1016:2706" placeholder="UPDATE `prem... " />
-            <marker date="1460137940000" expanded="true" signature="1458:1484" placeholder="..." />
-            <marker date="1460137940000" expanded="true" signature="1465:1484" placeholder="..." />
-            <marker date="1460137940000" expanded="true" signature="1641:1691" placeholder="..." />
-            <marker date="1460137940000" expanded="true" signature="3086:3122" placeholder="SELECT id, n... premio" />
+            <marker date="1460139054000" expanded="true" signature="317:362" placeholder="SELECT `valo... premio" />
+            <marker date="1460139054000" expanded="true" signature="317:388" placeholder="SELECT `valo... premio" />
+            <marker date="1460139054000" expanded="true" signature="701:974" placeholder="INSERT INTO `bunky`.`registro`... " />
+            <marker date="1460139054000" expanded="true" signature="1031:1090" placeholder="UPDATE `prem... " />
+            <marker date="1460139054000" expanded="true" signature="1031:1116" placeholder="UPDATE `prem... " />
+            <marker date="1460139054000" expanded="true" signature="1031:2741" placeholder="UPDATE `prem... " />
+            <marker date="1460139054000" expanded="true" signature="1493:1519" placeholder="..." />
+            <marker date="1460139054000" expanded="true" signature="1500:1519" placeholder="..." />
+            <marker date="1460139054000" expanded="true" signature="1676:1726" placeholder="..." />
+            <marker date="1460139054000" expanded="true" signature="3121:3157" placeholder="SELECT id, n... premio" />
           </folding>
         </state>
       </provider>
