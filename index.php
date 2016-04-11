@@ -79,8 +79,8 @@ if (!empty($_POST["submit"])) {
             <option value="Quito">Quito</option>
             <option value="Cuenca">Cuenca</option>
         </select>
-        <input type="text" name="telefono" required placeholder="Telefono"/>
-        <input type="text" name="email" required placeholder="Email"/>
+        <input type="number" name="telefono" required placeholder="Telefono"/>
+        <input type="email" name="email" required placeholder="Email"/>
         <input type="button" name="next" class="next action-button" value="Siguiente"/>
     </fieldset>
 
@@ -101,10 +101,10 @@ if (!empty($_POST["submit"])) {
         }
         $conn->close();
         ?>
-        <input type="text" name="codigo" required placeholder="Codigo de Producto"/>
-        <input type="checkbox" name="condiciones" required value="condiciones">Terminos y Condiciones <br>
+        <input type="number" name="codigo" required placeholder="Codigo de Producto"/>
+        <input type="radio" name="condiciones" id="condiciones" required value="condiciones"  onclick="deshabilita()">Terminos y Condiciones <br>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>
-        <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+        <input type="submit" name="submit" id="submit" class="submit action-button" value="Submit"/>
     </fieldset>
 </form>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
@@ -113,6 +113,25 @@ if (!empty($_POST["submit"])) {
         charset="utf-8"></script>
 
 <script src="./codigo.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $('input[type="checkbox"]').on('change', function () {
+        $('input[type="checkbox"]').not(this).prop('checked', false);
+    });
+</script>
+<script>
+    function deshabilita()
+    {
+        if(document.getElementById('condiciones').checked)
+        {
+            document.getElementById('submit').disabled=false;
+        }
+        else
+        {
+            document.getElementById('submit').disabled=true;
+        }
+    }
+    deshabilita();
+</script>
 </body>
 </html>
 
