@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,53 +20,46 @@ $username = "root";
 $password = "root";
 $dbname = "bunky";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
- if (!$conn) {
-     echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
- }
+if (!$conn) {
+    echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
+}
 if (!empty($_POST["submit"])) {
-    if(!empty($_POST["nombres"])){
+    if (!empty($_POST["nombres"])) {
         $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . $_POST["premios"] . "'";
         $result = $conn->query($sql);
         global $valor;
         if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-                $valor = $row["valor"] ;
+                $valor = $row["valor"];
             }
         }
-        if($valor>0){
+        if ($valor > 0) {
             $int = (int)$valor - 1;
         }
-        $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='".$_POST["codigo"]."'";
+        $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='" . $_POST["codigo"] . "'";
         $resultado = $conn->query($sql);
         if ($resultado->num_rows > 0) {
-            $sql = "SELECT `codigo` FROM `ingreso` WHERE codigo='".$_POST["codigo"]."'";
+            $sql = "SELECT `codigo` FROM `ingreso` WHERE codigo='" . $_POST["codigo"] . "'";
             $resultado1 = $conn->query($sql);
-           if($resultado1->num_rows == 0){
-               $sql = "INSERT INTO `bunky`.`registro` (`nombres`, `ciudad`, `telefono`, `email`, `premio`, `codigo`)
+            if ($resultado1->num_rows == 0) {
+                $sql = "INSERT INTO `bunky`.`registro` (`nombres`, `ciudad`, `telefono`, `email`, `premio`, `codigo`)
              VALUES ('" . $_POST["nombres"] . "', '" . $_POST["ciudad"] . "', '" . $_POST["telefono"] . "','" . $_POST["email"] .
-                   "','" . $_POST["premios"] . "','" . $_POST["codigo"] . "')";
-
-               if (mysqli_query($conn, $sql)) {
-                   $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" . $_POST["premios"] . "'";
-
-                   if (mysqli_query($conn, $sql)) {
-                       echo "<script>swal(\"Ingreso exitoso ".$_POST["nombres"]."!\")</script>";
-                   }
-                   $sql = "INSERT INTO `bunky`.`ingreso` (`codigo`) VALUES ('".$_POST["codigo"]."');";
-                   mysqli_query($conn, $sql);
-
-               }
-           }
-            else{
+                    "','" . $_POST["premios"] . "','" . $_POST["codigo"] . "')";
+                if (mysqli_query($conn, $sql)) {
+                    $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" . $_POST["premios"] . "'";
+                    if (mysqli_query($conn, $sql)) {
+                        echo "<script>swal(\"Ingreso exitoso " . $_POST["nombres"] . "!\")</script>";
+                    }
+                    $sql = "INSERT INTO `bunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
+                    mysqli_query($conn, $sql);
+                }
+            } else {
                 echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado ya fue registrado!\", \"error\");</script>";
             }
-        }
-        else{
+        } else {
             echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado es invalido, intentalo de nuevo!\", \"error\");</script>";
         }
-
-
     }
 }
 ?>
@@ -81,7 +73,7 @@ if (!empty($_POST["submit"])) {
     <fieldset>
         <h2 class="fs-title">Ingresa tus datos personales</h2>
         <h3 class="fs-subtitle">Paso 1</h3>
-        <input type="text" name="nombres"  placeholder="Nombre y Apellido" required/>
+        <input type="text" name="nombres" placeholder="Nombre y Apellido" required/>
         <select name="ciudad">
             <option value="0">Seleccionar</option>
             <option value="Guayaquil">Guayaquil</option>
@@ -97,14 +89,11 @@ if (!empty($_POST["submit"])) {
         <h2 class="fs-title">Premios</h2>
         <h3 class="fs-subtitle">Elige tu premio</h3>
         <?php
-
         $sql = "SELECT id, nombre, valor FROM premio";
         $result = $conn->query($sql);
-
         if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-
                 echo "<input type='checkbox' name='premios' value='" . $row["nombre"] . "' />" . $row["nombre"] . " " .
                     $row["valor"] . " <br>";
             }
@@ -113,7 +102,6 @@ if (!empty($_POST["submit"])) {
         }
         $conn->close();
         ?>
-
         <input type="text" name="codigo" required placeholder="Codigo de Producto"/>
         <input type="checkbox" name="condiciones" required value="condiciones">Terminos y Condiciones <br>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>
@@ -127,7 +115,7 @@ if (!empty($_POST["submit"])) {
 
 <script src="./codigo.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    $('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').on('change', function () {
         $('input[type="checkbox"]').not(this).prop('checked', false);
     });
 </script>
