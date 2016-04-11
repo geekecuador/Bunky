@@ -10,11 +10,10 @@
 
 </head>
 <body>
-<!-- multistep form -->
-<!-- multistep form -->
+
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 $servername = "localhost:8889";
 $username = "root";
 $password = "root";
