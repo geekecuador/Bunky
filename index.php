@@ -113,11 +113,6 @@ if (!empty($_POST["submit"])) {
         charset="utf-8"></script>
 
 <script src="./codigo.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    $('input[type="checkbox"]').on('change', function () {
-        $('input[type="checkbox"]').not(this).prop('checked', false);
-    });
-</script>
 </body>
 </html>
 
