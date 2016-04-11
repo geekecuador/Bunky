@@ -16,28 +16,24 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+$servername = "localhost:8889";
+$username = "root";
+$password = "root";
+$dbname = "bunky";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+ if (!$conn) {
+     echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
+ }
 if (!empty($_POST["submit"])) {
     if(!empty($_POST["nombres"])){
-        $servername = "localhost:8889";
-        $username = "root";
-        $password = "root";
-        $dbname = "bunky";
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-       // if (!$conn) {
-       // die("Connection failed: " . mysqli_connect_error());
-       // }
-
         $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . $_POST["premios"] . "'";
         $result = $conn->query($sql);
         global $valor;
         if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-
                 $valor = $row["valor"] ;
             }
-        } else {
-            echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
         }
         if($valor>0){
             $int = (int)$valor - 1;
@@ -71,7 +67,7 @@ if (!empty($_POST["submit"])) {
             echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado es invalido, intentalo de nuevo!\", \"error\");</script>";
         }
 
-        mysqli_close($conn);
+
     }
 }
 ?>
@@ -101,18 +97,6 @@ if (!empty($_POST["submit"])) {
         <h2 class="fs-title">Premios</h2>
         <h3 class="fs-subtitle">Elige tu premio</h3>
         <?php
-
-        $servername = "localhost:8889";
-        $username = "root";
-        $password = "root";
-        $dbname = "bunky";
-
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
 
         $sql = "SELECT id, nombre, valor FROM premio";
         $result = $conn->query($sql);
