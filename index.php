@@ -102,7 +102,8 @@ if (!empty($_POST["submit"])) {
         $conn->close();
         ?>
         <input type="number" name="codigo" required placeholder="Codigo de Producto"/>
-        <input type="radio" name="condiciones" id="condiciones" required value="condiciones"  onclick="deshabilita()">Terminos y Condiciones <br>
+        <input type="radio" name="condiciones" id="condiciones" required value="condiciones"  onclick="deshabilita()">
+        <a href="http://www.tumundobunky.com/terminos-y-condiciones/">Términos y Condiciones </a><br>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>
         <input type="submit" name="submit" id="submit" class="submit action-button" value="Submit"/>
     </fieldset>
