@@ -68,8 +68,8 @@ if (!empty($_POST["submit"])) {
     <!-- fieldsets -->
     <fieldset>
         <h2 class="fs-title">Ingresa tus datos personales</h2>
-        <input type="text" name="nombres" placeholder="Nombre y Apellido" required/>
-        <select name="ciudad">
+        <input type="text" name="nombres" id="nombres" placeholder="Nombre y Apellido" onblur="veri( this.value )" required/>
+        <select name="ciudad" id="ciudad" onchange="changeFunc();">
             <option value="0">Seleccionar</option>
             <option value="Guayaquil">Guayaquil</option>
             <option value="Quito">Quito</option>
@@ -108,8 +108,8 @@ if (!empty($_POST["submit"])) {
             <option value="Salinas">Salinas</option>
             <option value="La Troncal">La Troncal</option>
         </select>
-        <input type="number" name="telefono" required placeholder="Telefono"/>
-        <input type="email" name="email" required placeholder="Email"/>
+        <input type="number" name="telefono" id="telefono" required onblur="veri( this.value )" placeholder="Telefono"/>
+        <input type="email" name="email" required id="email" onblur="veri( this.value )" placeholder="Email"/>
         <input type="button" name="next" id="sig" class="next action-button" value="Siguiente"/>
     </fieldset>
 
@@ -151,8 +151,14 @@ if (!empty($_POST["submit"])) {
     $('input[type="checkbox"]').on('change', function () {
         $('input[type="checkbox"]').not(this).prop('checked', false);
     });
+    var a, b, c,sel;
+    document.getElementById('sig').disabled = true;
+    a = document.getElementById("nombres");
+    b = document.getElementById("email");
+    c = document.getElementById("telefono");
+    sel = document.getElementById("ciudad");
 </script>
-<script>
+<script type="text/javascript">
     function deshabilita() {
         if (document.getElementById('condiciones').checked) {
             document.getElementById('submit').disabled = false;
@@ -162,6 +168,28 @@ if (!empty($_POST["submit"])) {
         }
     }
     deshabilita();
+    function activacion(){
+        if((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != "0")) {
+            document.getElementById('sig').disabled = false;
+        }
+    }
+    function veri( campo )
+    {
+        if ( campo.length<1 )
+        {
+            sweetAlert("Oops...", "Debes ingresar algun valor!", "error");
+        }
+      activacion();
+
+    }
+    function changeFunc(){
+        var sel;
+        sel = document.getElementById("ciudad");
+        if (sel.value == "0"){
+            sweetAlert("Oops...", "Debes elegir alguna ciudad disponible!", "error");
+        }
+        activacion();
+    }
 </script>
 </body>
 </html>
