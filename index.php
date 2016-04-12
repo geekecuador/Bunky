@@ -14,10 +14,10 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
-$servername = "localhost";
-$username = "bdus3rbun";
-$password = "I%JKw($(b[Tm";
-$dbname = "bdbunky";
+$servername = "localhost:8889";
+$username = "root";
+$password = "root";
+$dbname = "bunky";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
@@ -118,7 +118,7 @@ if (!empty($_POST["submit"])) {
         <h3 class="fs-subtitle">Elige tu premio</h3>
         <div class='win'>
             <ul><?php
-                $sql = "SELECT id, nombre, valor FROM premio";
+                $sql = "SELECT id, nombre, valor, url FROM premio";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     // output data of each row
