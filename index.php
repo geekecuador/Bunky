@@ -123,8 +123,8 @@ if (!empty($_POST["submit"])) {
                 if ($result->num_rows > 0) {
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
-                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' value='" . $row["nombre"] . "' /></li> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
-                            $row["valor"] . "</span>";
+                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' value='" . $row["nombre"] . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
+                            $row["valor"] . "</span></li>";
                     }
                 } else {
                     echo "0 results";
