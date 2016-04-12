@@ -151,8 +151,8 @@ if (!empty($_POST["submit"])) {
     $('input[type="checkbox"]').on('change', function () {
         $('input[type="checkbox"]').not(this).prop('checked', false);
     });
+
     var a, b, c,sel;
-    document.getElementById('sig').disabled = true;
     a = document.getElementById("nombres");
     b = document.getElementById("email");
     c = document.getElementById("telefono");
