@@ -14,7 +14,7 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
-$servername = "localhost:8889";
+$servername = "localhost";
 $username = "root";
 $password = "root";
 $dbname = "bunky";
@@ -109,7 +109,7 @@ if (!empty($_POST["submit"])) {
             <option value="La Troncal">La Troncal</option>
         </select>
         <input type="number" name="telefono" id="telefono" required onblur="veri( this.value )" placeholder="Telefono"/>
-        <input type="email" name="email" required id="email" onblur="veri( this.value )" placeholder="Email"/>
+        <input type="email" name="email" required id="email" onblur="verie( this.value )" placeholder="Email"/>
         <input type="button" name="next" id="sig" class="next action-button" value="Siguiente"/>
     </fieldset>
 
@@ -169,7 +169,7 @@ if (!empty($_POST["submit"])) {
     }
     deshabilita();
     function activacion(){
-        if((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != "0")) {
+        if((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != "0") ) {
             document.getElementById('sig').disabled = false;
         }
     }
@@ -179,7 +179,21 @@ if (!empty($_POST["submit"])) {
         {
             sweetAlert("Oops...", "Debes ingresar algun valor!", "error");
         }
-      activacion();
+
+        activacion();
+
+    }
+    function verie( campo )
+    {
+        if ( campo.length<1 )
+        {
+            sweetAlert("Oops...", "Debes ingresar algun valor!", "error");
+        }
+        expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if ( !expr.test(campo) )
+            sweetAlert("Oops...", "Debes ingresar un email valido!", "error");
+
+        activacion();
 
     }
     function changeFunc(){
@@ -189,6 +203,11 @@ if (!empty($_POST["submit"])) {
             sweetAlert("Oops...", "Debes elegir alguna ciudad disponible!", "error");
         }
         activacion();
+    }
+    function validarEmail(valor) {
+
+
+
     }
 </script>
 </body>
