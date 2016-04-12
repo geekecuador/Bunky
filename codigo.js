@@ -9,7 +9,7 @@ $(".next").click(function(){
 
 
 	if ((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != "0")){
-		if((expr.test(campo) )){
+		if((expr.test(b.value) )){
 			if(animating) return false;
 			animating = true;
 

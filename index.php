@@ -185,6 +185,7 @@ if (!empty($_POST["submit"])) {
     }
     function verie( campo )
     {
+
         if ( campo.length<1 )
         {
             sweetAlert("Oops...", "Debes ingresar algun valor!", "error");

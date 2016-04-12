@@ -28,16 +28,16 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.875">
-              <caret line="194" column="0" selection-start-line="191" selection-start-column="8" selection-end-line="194" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.125">
+              <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
               <folding>
-                <marker date="1460433471000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-                <marker date="1460433471000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-                <marker date="1460433471000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-                <marker date="1460433471000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-                <marker date="1460433471000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-                <marker date="1460433471000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-                <marker date="1460433471000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
+                <marker date="1460434157000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+                <marker date="1460434157000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+                <marker date="1460434157000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+                <marker date="1460434157000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+                <marker date="1460434157000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+                <marker date="1460434157000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+                <marker date="1460434157000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
               </folding>
             </state>
           </provider>
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/codigo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.2739726">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -224,29 +224,29 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460433471000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-            <marker date="1460433471000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-            <marker date="1460433471000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-            <marker date="1460433471000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-            <marker date="1460433471000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-            <marker date="1460433471000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-            <marker date="1460433471000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
+            <marker date="1460434157000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+            <marker date="1460434157000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+            <marker date="1460434157000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+            <marker date="1460434157000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+            <marker date="1460434157000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+            <marker date="1460434157000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+            <marker date="1460434157000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.875">
-          <caret line="194" column="0" selection-start-line="191" selection-start-column="8" selection-end-line="194" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.125">
+          <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
           <folding>
-            <marker date="1460433471000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-            <marker date="1460433471000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-            <marker date="1460433471000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-            <marker date="1460433471000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-            <marker date="1460433471000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-            <marker date="1460433471000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-            <marker date="1460433471000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
+            <marker date="1460434157000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+            <marker date="1460434157000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+            <marker date="1460434157000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+            <marker date="1460434157000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+            <marker date="1460434157000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+            <marker date="1460434157000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+            <marker date="1460434157000" expanded="true" signature="5733:5774" placeholder="SELECT id, n... premio" />
           </folding>
         </state>
       </provider>
@@ -254,7 +254,7 @@
     <entry file="file://$PROJECT_DIR$/codigo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2739726">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding />
         </state>
       </provider>
