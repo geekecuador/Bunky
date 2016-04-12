@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./estilos.css">
     <script src="dist/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"
+            charset="utf-8"></script>
 
 </head>
 <body>
@@ -148,6 +152,7 @@ if ($result->num_rows > 0){
         <input type=\"submit\" name=\"submit\" id=\"submit\" class=\"submit action-button\" value=\"Enviar\"/>
     </fieldset>
 </form>";
+
     echo "<script src=\"./codigo.js\" type=\"text/javascript\" charset=\"utf-8\"></script>
 <script type=\"text/javascript\">
     $('input[type=\"checkbox\"]').on('change', function () {
@@ -207,11 +212,7 @@ if ($result->num_rows > 0){
         }
         activacion();
     }
-    function validarEmail(valor) {
 
-
-
-    }
 </script>";
 }
 else{
@@ -219,10 +220,6 @@ else{
 }
 ?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
-        charset="utf-8"></script>
-<script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"
-        charset="utf-8"></script>
 
 
 </body>
