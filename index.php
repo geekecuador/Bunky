@@ -64,61 +64,67 @@ if (!empty($_POST["submit"])) {
     }
 }
 ?>
-<form id="msform" method="POST" action="">
+
+<?php
+$sql = "SELECT id, nombre, valor, url FROM premio where valor > 0";
+$result = $conn->query($sql);
+if ($result->num_rows > 0){
+    echo "<form id=\"msform\" method=\"POST\" action=\"\">
     <!-- fieldsets -->
     <fieldset>
-        <h2 class="fs-title">Ingresa tus datos personales</h2>
-        <input type="text" name="nombres" id="nombres" placeholder="Nombre y Apellido" onblur="veri( this.value )" required/>
-        <select name="ciudad" id="ciudad" onchange="changeFunc();">
-            <option value="0">Seleccionar</option>
-            <option value="Guayaquil">Guayaquil</option>
-            <option value="Quito">Quito</option>
-            <option value="Cuenca">Cuenca</option>
-            <option value="Santo Domingo">Santo Domingo</option>
-            <option value="Machala">Machala</option>
-            <option value="Durán">Durán</option>
-            <option value="Manta">Manta</option>
-            <option value="Portoviejo">Portoviejo</option>
-            <option value="Ambato">Ambato</option>
-            <option value="Riobamba">Riobamba</option>
-            <option value="Quevedo">Quevedo</option>
-            <option value="Loja">Loja</option>
-            <option value="Ibarra">Ibarra</option>
-            <option value="Milagro">Milagro</option>
-            <option value="Esmeraldas">Esmeraldas</option>
-            <option value="La Libertad">La Libertad</option>
-            <option value="Babahoyo">Babahoyo</option>
-            <option value="Tulcán">Tulcán</option>
-            <option value="Sangolquí">Sangolquí</option>
-            <option value="Latacunga">Latacunga</option>
-            <option value="Pasaje">Pasaje</option>
-            <option value="Chone">Chone</option>
-            <option value="Santa Rosa">Santa Rosa</option>
-            <option value="Huaquillas">Huaquillas</option>
-            <option value="Nueva Loja">Nueva Loja</option>
-            <option value="El Carmen">El Carmen</option>
-            <option value="Jipijapa">Jipijapa</option>
-            <option value="Ventanas">Ventanas</option>
-            <option value="Daule">Daule</option>
-            <option value="Cayambe">Cayambe</option>
-            <option value="Otavalo">Otavalo</option>
-            <option value="Velasco Ibarra">Velasco Ibarra</option>
-            <option value="Azogues">Azogues</option>
-            <option value="Santa Elena">Santa Elena</option>
-            <option value="Salinas">Salinas</option>
-            <option value="La Troncal">La Troncal</option>
+        <h2 class=\"fs-title\">Ingresa tus datos personales</h2>
+        <input type=\"text\" name=\"nombres\" id=\"nombres\" placeholder=\"Nombre y Apellido\" onblur=\"veri( this.value )\" required/>
+        <select name=\"ciudad\" id=\"ciudad\" onchange=\"changeFunc();\">
+            <option value=\"0\">Seleccionar</option>
+            <option value=\"Guayaquil\">Guayaquil</option>
+            <option value=\"Quito\">Quito</option>
+            <option value=\"Cuenca\">Cuenca</option>
+            <option value=\"Santo Domingo\">Santo Domingo</option>
+            <option value=\"Machala\">Machala</option>
+            <option value=\"Durán\">Durán</option>
+            <option value=\"Manta\">Manta</option>
+            <option value=\"Portoviejo\">Portoviejo</option>
+            <option value=\"Ambato\">Ambato</option>
+            <option value=\"Riobamba\">Riobamba</option>
+            <option value=\"Quevedo\">Quevedo</option>
+            <option value=\"Loja\">Loja</option>
+            <option value=\"Ibarra\">Ibarra</option>
+            <option value=\"Milagro\">Milagro</option>
+            <option value=\"Esmeraldas\">Esmeraldas</option>
+            <option value=\"La Libertad\">La Libertad</option>
+            <option value=\"Babahoyo\">Babahoyo</option>
+            <option value=\"Tulcán\">Tulcán</option>
+            <option value=\"Sangolquí\">Sangolquí</option>
+            <option value=\"Latacunga\">Latacunga</option>
+            <option value=\"Pasaje\">Pasaje</option>
+            <option value=\"Chone\">Chone</option>
+            <option value=\"Santa Rosa\">Santa Rosa</option>
+            <option value=\"Huaquillas\">Huaquillas</option>
+            <option value=\"Nueva Loja\">Nueva Loja</option>
+            <option value=\"El Carmen\">El Carmen</option>
+            <option value=\"Jipijapa\">Jipijapa</option>
+            <option value=\"Ventanas\">Ventanas</option>
+            <option value=\"Daule\">Daule</option>
+            <option value=\"Cayambe\">Cayambe</option>
+            <option value=\"Otavalo\">Otavalo</option>
+            <option value=\"Velasco Ibarra\">Velasco Ibarra</option>
+            <option value=\"Azogues\">Azogues</option>
+            <option value=\"Santa Elena\">Santa Elena</option>
+            <option value=\"Salinas\">Salinas</option>
+            <option value=\"La Troncal\">La Troncal</option>
         </select>
-        <input type="number" name="telefono" id="telefono" required onblur="veri( this.value )" placeholder="Telefono"/>
-        <input type="email" name="email" required id="email" onblur="verie( this.value )" placeholder="Email"/>
-        <input type="button" name="next" id="sig" class="next action-button" value="Siguiente"/>
+        <input type=\"number\" name=\"telefono\" id=\"telefono\" required onblur=\"veri( this.value )\" placeholder=\"Telefono\"/>
+        <input type=\"email\" name=\"email\" required id=\"email\" onblur=\"verie( this.value )\" placeholder=\"Email\"/>
+        <input type=\"button\" name=\"next\" id=\"sig\" class=\"next action-button\" value=\"Siguiente\"/>
     </fieldset>
 
     <fieldset>
-        <h2 class="fs-title">Premios</h2>
-        <h3 class="fs-subtitle">Elige tu premio</h3>
+        <h2 class=\"fs-title\">Premios</h2>
+        <h3 class=\"fs-subtitle\">Elige tu premio</h3>
         <div class='win'>
-            <ul><?php
-                $sql = "SELECT id, nombre, valor, url FROM premio";
+            <ul>";
+
+                $sql = "SELECT id, nombre, valor, url FROM premio where valor > 0";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     // output data of each row
@@ -130,17 +136,24 @@ if (!empty($_POST["submit"])) {
                     echo "0 results";
                 }
                 $conn->close();
-                ?>
+                echo "
             </ul>
         </div>
-        <input type="number" name="codigo" required placeholder="Codigo de Producto"/>
-        <input type="radio" name="condiciones" id="condiciones" required value="condiciones" onclick="deshabilita()">
-        <a href="http://www.tumundobunky.com/terminos-y-condiciones/" target="_blank" class="terminos">*Términos y
-            Condiciones</a><br><span class="term2">He leído y acepto los términos y condiciones</span><br>
-        <input type="button" name="previous" class="previous action-button" value="Regresar"/>
-        <input type="submit" name="submit" id="submit" class="submit action-button" value="Enviar"/>
+
+        <input type=\"number\" name=\"codigo\" required placeholder=\"Codigo de Producto\"/>
+        <input type=\"radio\" name=\"condiciones\" id=\"condiciones\" required value=\"condiciones\" onclick=\"deshabilita()\">
+        <a href=\"http://www.tumundobunky.com/terminos-y-condiciones/\" target=\"_blank\" class=\"terminos\">*Términos y
+            Condiciones</a><br><span class=\"term2\">He leído y acepto los términos y condiciones</span><br>
+        <input type=\"button\" name=\"previous\" class=\"previous action-button\" value=\"Regresar\"/>
+        <input type=\"submit\" name=\"submit\" id=\"submit\" class=\"submit action-button\" value=\"Enviar\"/>
     </fieldset>
-</form>
+</form>";
+}
+else{
+    echo "<img class=\"alignnone\" src=\"https://media.giphy.com/media/l4hLQ38xa9DmGki52/giphy.gif\" alt=\"\" width=\"800\" height=\"800\">";
+}
+?>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
         charset="utf-8"></script>
 <script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"
