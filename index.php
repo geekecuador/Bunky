@@ -148,28 +148,17 @@ if ($result->num_rows > 0){
         <input type=\"submit\" name=\"submit\" id=\"submit\" class=\"submit action-button\" value=\"Enviar\"/>
     </fieldset>
 </form>";
-}
-else{
-    echo "<img class=\"alignnone\" src=\"https://media.giphy.com/media/l4hLQ38xa9DmGki52/giphy.gif\" alt=\"\" width=\"800\" height=\"800\">";
-}
-?>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
-        charset="utf-8"></script>
-<script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"
-        charset="utf-8"></script>
-
-<script src="./codigo.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    $('input[type="checkbox"]').on('change', function () {
-        $('input[type="checkbox"]').not(this).prop('checked', false);
+    echo "<script src=\"./codigo.js\" type=\"text/javascript\" charset=\"utf-8\"></script>
+<script type=\"text/javascript\">
+    $('input[type=\"checkbox\"]').on('change', function () {
+        $('input[type=\"checkbox\"]').not(this).prop('checked', false);
     });
 
     var a, b, c,sel;
-    a = document.getElementById("nombres");
-    b = document.getElementById("email");
-    c = document.getElementById("telefono");
-    sel = document.getElementById("ciudad");
+    a = document.getElementById(\"nombres\");
+    b = document.getElementById(\"email\");
+    c = document.getElementById(\"telefono\");
+    sel = document.getElementById(\"ciudad\");
 
 
     function deshabilita() {
@@ -182,7 +171,7 @@ else{
     }
     deshabilita();
     function activacion(){
-        if((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != "0") ) {
+        if((a.value.length>0) && (b.value.length>0) && (c.value.length>0) && (sel.value != \"0\") ) {
             document.getElementById('sig').disabled = false;
         }
     }
@@ -190,7 +179,7 @@ else{
     {
         if ( campo.length<1 )
         {
-            sweetAlert("Oops...", "Debes ingresar algun valor!", "error");
+            sweetAlert(\"Oops...\", \"Debes ingresar algun valor!\", \"error\");
         }
 
         activacion();
@@ -201,20 +190,20 @@ else{
 
         if ( campo.length<1 )
         {
-            sweetAlert("Oops...", "Debes ingresar algun valor!", "error");
+            sweetAlert(\"Oops...\", \"Debes ingresar algun valor!\", \"error\");
         }
         expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if ( !expr.test(campo) )
-            sweetAlert("Oops...", "Debes ingresar un email valido!", "error");
+            sweetAlert(\"Oops...\", \"Debes ingresar un email valido!\", \"error\");
 
         activacion();
 
     }
     function changeFunc(){
         var sel;
-        sel = document.getElementById("ciudad");
-        if (sel.value == "0"){
-            sweetAlert("Oops...", "Debes elegir alguna ciudad disponible!", "error");
+        sel = document.getElementById(\"ciudad\");
+        if (sel.value == \"0\"){
+            sweetAlert(\"Oops...\", \"Debes elegir alguna ciudad disponible!\", \"error\");
         }
         activacion();
     }
@@ -223,6 +212,18 @@ else{
 
 
     }
-</script>
+</script>";
+}
+else{
+    echo "<img class=\"alignnone\" src=\"https://media.giphy.com/media/l4hLQ38xa9DmGki52/giphy.gif\" alt=\"\" width=\"800\" height=\"800\">";
+}
+?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"
+        charset="utf-8"></script>
+
+
 </body>
 </html>

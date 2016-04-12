@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce01731e-4892-4f3b-ab89-23eb9f144c0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="bunky.iws" />
@@ -28,28 +27,42 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.044368602">
-              <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+            <state vertical-scroll-proportion="1.3412969">
+              <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
               <folding>
-                <marker date="1460474060000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-                <marker date="1460474060000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-                <marker date="1460474060000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-                <marker date="1460474060000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-                <marker date="1460474060000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-                <marker date="1460474060000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-                <marker date="1460474060000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
-                <marker date="1460474060000" expanded="true" signature="3013:6310" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="3051:5819" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="3326:5443" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5835:6310" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5960:5977" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5960:6310" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5977:6004" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5977:6292" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="5977:6310" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
-                <marker date="1460474060000" expanded="true" signature="6463:6496" placeholder="..." />
-                <marker date="1460474060000" expanded="true" signature="7049:7088" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+                <marker date="1460474315000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+                <marker date="1460474315000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+                <marker date="1460474315000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+                <marker date="1460474315000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+                <marker date="1460474315000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+                <marker date="1460474315000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
+                <marker date="1460474315000" expanded="true" signature="3013:6310" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="3051:5819" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="3326:5443" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5835:6310" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5960:5977" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5960:6310" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5977:6004" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5977:6292" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="5977:6310" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
+                <marker date="1460474315000" expanded="true" signature="6463:6496" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="7049:7088" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="7534:9269" placeholder="..." />
+                <marker date="1460474315000" expanded="true" signature="7595:7674" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="7912:8143" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="7974:8049" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8063:8137" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8188:8368" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8290:8362" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8400:8562" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8440:8532" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8595:8958" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8636:8728" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="8984:9216" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="9085:9188" placeholder="{...}" />
+                <marker date="1460474315000" expanded="true" signature="9250:9260" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -236,25 +249,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460474060000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-            <marker date="1460474060000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-            <marker date="1460474060000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-            <marker date="1460474060000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-            <marker date="1460474060000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-            <marker date="1460474060000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-            <marker date="1460474060000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="3013:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3051:5819" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3326:5443" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5835:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:5977" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6004" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6292" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="6463:6496" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+            <marker date="1460474315000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+            <marker date="1460474315000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+            <marker date="1460474315000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+            <marker date="1460474315000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+            <marker date="1460474315000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+            <marker date="1460474315000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="3013:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3051:5819" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3326:5443" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5835:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:5977" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6004" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6292" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="6463:6496" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7534:9269" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7595:7674" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7912:8143" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7974:8049" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8063:8137" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8188:8368" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8290:8362" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8400:8562" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8440:8532" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8595:8958" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8636:8728" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8984:9216" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9085:9188" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9250:9260" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -272,25 +299,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460474060000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-            <marker date="1460474060000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-            <marker date="1460474060000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-            <marker date="1460474060000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-            <marker date="1460474060000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-            <marker date="1460474060000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-            <marker date="1460474060000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="3013:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3051:5819" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3326:5443" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5835:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:5977" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6004" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6292" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="6463:6496" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+            <marker date="1460474315000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+            <marker date="1460474315000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+            <marker date="1460474315000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+            <marker date="1460474315000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+            <marker date="1460474315000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+            <marker date="1460474315000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="3013:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3051:5819" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3326:5443" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5835:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:5977" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6004" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6292" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="6463:6496" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7534:9269" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7595:7674" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7912:8143" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7974:8049" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8063:8137" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8188:8368" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8290:8362" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8400:8562" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8440:8532" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8595:8958" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8636:8728" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8984:9216" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9085:9188" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9250:9260" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -305,28 +346,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044368602">
-          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+        <state vertical-scroll-proportion="1.3412969">
+          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
           <folding>
-            <marker date="1460474060000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
-            <marker date="1460474060000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
-            <marker date="1460474060000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
-            <marker date="1460474060000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
-            <marker date="1460474060000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
-            <marker date="1460474060000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
-            <marker date="1460474060000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="3013:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3051:5819" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="3326:5443" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5835:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:5977" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5960:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6004" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6292" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="5977:6310" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
-            <marker date="1460474060000" expanded="true" signature="6463:6496" placeholder="..." />
-            <marker date="1460474060000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="761:832" placeholder="SELECT `valo... premio" />
+            <marker date="1460474315000" expanded="true" signature="1176:1247" placeholder="SELECT `codi... codigo" />
+            <marker date="1460474315000" expanded="true" signature="1351:1421" placeholder="SELECT `codi... ingreso" />
+            <marker date="1460474315000" expanded="true" signature="1540:1844" placeholder="INSERT INTO `bdbunky`.`registro`... " />
+            <marker date="1460474315000" expanded="true" signature="1924:2009" placeholder="UPDATE `prem... " />
+            <marker date="1460474315000" expanded="true" signature="2217:2295" placeholder="INSERT INTO `bdbunky`.`ingreso`... " />
+            <marker date="1460474315000" expanded="true" signature="2838:2895" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="3013:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3051:5819" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="3326:5443" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5835:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:5977" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5960:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6004" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6292" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="5977:6310" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="6006:6063" placeholder="SELECT id, n... premio" />
+            <marker date="1460474315000" expanded="true" signature="6463:6496" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7049:7088" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7534:9269" placeholder="..." />
+            <marker date="1460474315000" expanded="true" signature="7595:7674" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7912:8143" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="7974:8049" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8063:8137" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8188:8368" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8290:8362" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8400:8562" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8440:8532" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8595:8958" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8636:8728" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="8984:9216" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9085:9188" placeholder="{...}" />
+            <marker date="1460474315000" expanded="true" signature="9250:9260" placeholder="{...}" />
           </folding>
         </state>
       </provider>
