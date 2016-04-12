@@ -147,7 +147,7 @@ if (!empty($_POST["submit"])) {
         charset="utf-8"></script>
 
 <script src="./codigo.js" type="text/javascript" charset="utf-8"></script>
-<script>
+<script type="text/javascript">
     $('input[type="checkbox"]').on('change', function () {
         $('input[type="checkbox"]').not(this).prop('checked', false);
     });
@@ -157,8 +157,8 @@ if (!empty($_POST["submit"])) {
     b = document.getElementById("email");
     c = document.getElementById("telefono");
     sel = document.getElementById("ciudad");
-</script>
-<script type="text/javascript">
+
+
     function deshabilita() {
         if (document.getElementById('condiciones').checked) {
             document.getElementById('submit').disabled = false;
