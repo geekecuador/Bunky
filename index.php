@@ -58,28 +58,22 @@ if (!empty($_POST["submit"])) {
             $int = (int)$valor - 1;
         }
         $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='" . $_POST["codigo"] . "'";
-    echo $sql;
+
         $resultado = $conn->query($sql);
 
         if ($resultado->num_rows > 0) {
             $sql = "SELECT `codigo` FROM `ingreso` WHERE codigo='" . $_POST["codigo"] . "'";
-            echo $sql;
             $resultado1 = $conn->query($sql);
-            echo $resultado1->num_rows == 0;
             if ($resultado1->num_rows == 0) {
-                $sql = "INSERT INTO `bdbunky`.`registro` (`nombres`, `ciudad`, `telefono`, `email`, `premio`, `codigo`)
+                $sql = "INSERT INTO `dbbunky`.`registro` (`nombres`, `ciudad`, `telefono`, `email`, `premio`, `codigo`)
              VALUES ('" . $_POST["nombres"] . "', '" . $_POST["ciudad"] . "', '" . $_POST["telefono"] . "','" . $_POST["email"] .
                     "','" . desencriptar($_POST["premios"]) . "','" . $_POST["codigo"] . "')";
-                echo $sql;
-
                 if (mysqli_query($conn, $sql)) {
                     $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" .desencriptar($_POST["premios"]) . "'";
-                    echo $sql;
                     if (mysqli_query($conn, $sql)) {
                         echo "<script>swal(\"Ingreso exitoso " . $_POST["nombres"] . "!\")</script>";
                     }
-                    $sql = "INSERT INTO `bdbunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
-                    echo $sql;
+                    $sql = "INSERT INTO `dbbunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
                     mysqli_query($conn, $sql);
                 }
             } else {
