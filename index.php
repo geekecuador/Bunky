@@ -18,6 +18,20 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
+$key = "mevoyaclasesenel2016";
+function encriptar($cadena){
+    $key='';  // Una clave de codificacion, debe usarse la misma para encriptar y desencriptar
+    $encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $cadena, MCRYPT_MODE_CBC, md5(md5($key))));
+    return $encrypted; //Devuelve el string encriptado
+
+}
+
+function desencriptar($cadena){
+    $key='';  // Una clave de codificacion, debe usarse la misma para encriptar y desencriptar
+    $decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($cadena), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+    return $decrypted;  //Devuelve el string desencriptado
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -28,7 +42,7 @@ if (!$conn) {
 }
 if (!empty($_POST["submit"])) {
     if (!empty($_POST["nombres"])) {
-        $sql = "SELECT `valor` FROM `premio` WHERE `id`='" . $_POST["premios"] . "'";
+        $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . desencriptar($_POST["premios"] ). "'";
         $result = $conn->query($sql);
         global $valor;
         if ($result->num_rows > 0) {
@@ -133,7 +147,7 @@ if ($result->num_rows > 0){
                 if ($result->num_rows > 0) {
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
-                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' value='" . $row["id"] . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
+                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' onclick=\"pullo();\" value='" . encriptar($row["nombre"]) . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
                             $row["valor"] . "</span></li>";
                     }
                 } else {
@@ -159,7 +173,7 @@ if ($result->num_rows > 0){
         $('input[type=\"checkbox\"]').not(this).prop('checked', false);
     });
 
-    var a, b, c,sel;
+    var a, b, c,sel,valor;
     a = document.getElementById(\"nombres\");
     b = document.getElementById(\"email\");
     c = document.getElementById(\"telefono\");
@@ -167,11 +181,15 @@ if ($result->num_rows > 0){
 
 
     function deshabilita() {
-        if (document.getElementById('condiciones').checked) {
+        if ((document.getElementById('condiciones').checked) && (valor ==true)) {
             document.getElementById('submit').disabled = false;
         }
         else {
             document.getElementById('submit').disabled = true;
+
+        }
+        if(valor==false){
+        sweetAlert(\"Oops...\", \"Te falta complentar el formulario!\", \"error\");
         }
     }
     deshabilita();
@@ -211,6 +229,10 @@ if ($result->num_rows > 0){
             sweetAlert(\"Oops...\", \"Debes elegir alguna ciudad disponible!\", \"error\");
         }
         activacion();
+    }
+
+    function pullo(){
+        valor=true;
     }
 
 </script>";
