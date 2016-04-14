@@ -28,7 +28,7 @@ if (!$conn) {
 }
 if (!empty($_POST["submit"])) {
     if (!empty($_POST["nombres"])) {
-        $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . $_POST["premios"] . "'";
+        $sql = "SELECT `valor` FROM `premio` WHERE `id`='" . $_POST["premios"] . "'";
         $result = $conn->query($sql);
         global $valor;
         if ($result->num_rows > 0) {
@@ -133,7 +133,7 @@ if ($result->num_rows > 0){
                 if ($result->num_rows > 0) {
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
-                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' value='" . $row["nombre"] . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
+                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' value='" . $row["id"] . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
                             $row["valor"] . "</span></li>";
                     }
                 } else {
