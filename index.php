@@ -174,6 +174,7 @@ if ($result->num_rows > 0){
     });
 
     var a, b, c,sel,valor;
+    valor = false;
     a = document.getElementById(\"nombres\");
     b = document.getElementById(\"email\");
     c = document.getElementById(\"telefono\");
