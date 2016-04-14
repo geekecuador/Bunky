@@ -16,8 +16,8 @@
 <body>
 
 <?php
-//error_reporting(E_ALL);
-//ini_set('display_errors', '1');
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 $key = "mevoyaclasesenel2016";
 function encriptar($cadena){
     $key='';  // Una clave de codificacion, debe usarse la misma para encriptar y desencriptar
@@ -41,8 +41,10 @@ if (!$conn) {
     echo "<script>sweetAlert(\"Oops...\", \"Error en la conexion a la base de datos!\", \"error\");</script>";
 }
 if (!empty($_POST["submit"])) {
-    if (!empty($_POST["nombres"])) {
+    if (!empty($_POST["nombres"]))
+
         $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . desencriptar($_POST["premios"] ). "'";
+
         $result = $conn->query($sql);
         global $valor;
         if ($result->num_rows > 0) {
@@ -51,24 +53,33 @@ if (!empty($_POST["submit"])) {
                 $valor = $row["valor"];
             }
         }
+
         if ($valor > 0) {
             $int = (int)$valor - 1;
         }
         $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='" . $_POST["codigo"] . "'";
+    echo $sql;
         $resultado = $conn->query($sql);
+
         if ($resultado->num_rows > 0) {
             $sql = "SELECT `codigo` FROM `ingreso` WHERE codigo='" . $_POST["codigo"] . "'";
+            echo $sql;
             $resultado1 = $conn->query($sql);
+            echo $resultado1->num_rows == 0;
             if ($resultado1->num_rows == 0) {
                 $sql = "INSERT INTO `bdbunky`.`registro` (`nombres`, `ciudad`, `telefono`, `email`, `premio`, `codigo`)
              VALUES ('" . $_POST["nombres"] . "', '" . $_POST["ciudad"] . "', '" . $_POST["telefono"] . "','" . $_POST["email"] .
-                    "','" . $_POST["premios"] . "','" . $_POST["codigo"] . "')";
+                    "','" . desencriptar($_POST["premios"]) . "','" . $_POST["codigo"] . "')";
+                echo $sql;
+
                 if (mysqli_query($conn, $sql)) {
-                    $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" . $_POST["premios"] . "'";
+                    $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" .desencriptar($_POST["premios"]) . "'";
+                    echo $sql;
                     if (mysqli_query($conn, $sql)) {
                         echo "<script>swal(\"Ingreso exitoso " . $_POST["nombres"] . "!\")</script>";
                     }
                     $sql = "INSERT INTO `bdbunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
+                    echo $sql;
                     mysqli_query($conn, $sql);
                 }
             } else {
@@ -80,7 +91,7 @@ if (!empty($_POST["submit"])) {
     } else {
         echo "<script>sweetAlert(\"Oops...\", \"Debes ingresar tus datos personales completos!\", \"error\");</script>";
     }
-}
+
 ?>
 
 <?php
@@ -189,9 +200,7 @@ if ($result->num_rows > 0){
             document.getElementById('submit').disabled = true;
 
         }
-        if(valor==false){
-        sweetAlert(\"Oops...\", \"Te falta complentar el formulario!\", \"error\");
-        }
+
     }
     deshabilita();
     function activacion(){
@@ -234,6 +243,9 @@ if ($result->num_rows > 0){
 
     function pullo(){
         valor=true;
+        if ((document.getElementById('condiciones').checked) && (valor ==true)) {
+            document.getElementById('submit').disabled = false;
+        }
     }
 
 </script>";
