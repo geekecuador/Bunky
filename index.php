@@ -47,12 +47,12 @@ if (!empty($_POST["submit"])) {
 
         $result = $conn->query($sql);
         global $valor;
-       // if ($result->num_rows > 0) {
+        if ($result->num_rows > 0) {
             // output data of each row
-           // while ($row = $result->fetch_assoc()) {
-              //  $valor = $row["valor"];
-            //}//
-        //}
+            while ($row = $result->fetch_assoc()) {
+                $valor = $row["valor"];
+            }//
+        }
 
       //  if ($valor > 0) {
             //$int = (int)$valor - 1;
@@ -83,7 +83,7 @@ if (!empty($_POST["submit"])) {
         } else {
             echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado es invalido, intentalo de nuevo!\", \"error\");</script>";
         }
-    } 
+    }
 
 ?>
 
