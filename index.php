@@ -18,6 +18,7 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
+
 $key = "mevoyaclasesenel2016";
 function encriptar($cadena){
     $key='';  // Una clave de codificacion, debe usarse la misma para encriptar y desencriptar
@@ -32,6 +33,8 @@ function desencriptar($cadena){
     return $decrypted;  //Devuelve el string desencriptado
 }
 
+
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -43,6 +46,15 @@ if (!$conn) {
 if (!empty($_POST["submit"])) {
     if (!empty($_POST["nombres"]))
 
+        $aleatorio = rand(0, 100);
+
+    if ($aleatorio > 95) {
+
+    } elseif (($aleatorio > 40) && ($aleatorio < 90)) {
+
+    } else {
+
+    }
         $sql = "SELECT `valor` FROM `premio` WHERE `nombre`='" . desencriptar($_POST["premios"] ). "'";
 
         $result = $conn->query($sql);
@@ -54,9 +66,9 @@ if (!empty($_POST["submit"])) {
             }//
         }
 
-      //  if ($valor > 0) {
-            //$int = (int)$valor - 1;
-        //}
+        if ($valor > 0) {
+            $int = (int)$valor - 1;
+        }
         $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='" . $_POST["codigo"] . "'";
 
         $resultado = $conn->query($sql);
@@ -140,28 +152,9 @@ if ($result->num_rows > 0){
         <input type=\"button\" name=\"next\" id=\"sig\" class=\"next action-button\" value=\"Siguiente\"/>
     </fieldset>
 
-    <fieldset>
-        <h2 class=\"fs-title\">Premios</h2>
-        <h3 class=\"fs-subtitle\">Elige tu premio</h3>
-        <div class='win'>
-            <ul>";
+    <fieldset>";
 
-                $sql = "SELECT id, nombre, valor, url FROM premio where valor > 0";
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
-                    // output data of each row
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<li><img src='".$row["url"]."'><input type='checkbox' name='premios' onclick=\"pullo();\" value='" . encriptar($row["nombre"]) . "' /> <label class='pep'>" . $row["nombre"] . "</label> <span class='nu'>" .
-                            $row["valor"] . "</span></li>";
-                    }
-                } else {
-                    echo "0 results";
-                }
-                $conn->close();
-                echo "
-            </ul>
-        </div>
-
+    echo "
         <input type=\"number\" name=\"codigo\" required placeholder=\"Codigo de Producto\"/>
         <input type=\"radio\" name=\"condiciones\" id=\"condiciones\" required value=\"condiciones\" onclick=\"deshabilita()\">
         <a href=\"http://www.tumundobunky.com/terminos-y-condiciones/\" target=\"_blank\" class=\"terminos\">*Términos y
@@ -178,7 +171,7 @@ if ($result->num_rows > 0){
     });
 
     var a, b, c,sel,valor;
-    valor = false;
+    valor = true;
     a = document.getElementById(\"nombres\");
     b = document.getElementById(\"email\");
     c = document.getElementById(\"telefono\");
