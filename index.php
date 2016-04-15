@@ -47,16 +47,16 @@ if (!empty($_POST["submit"])) {
 
         $result = $conn->query($sql);
         global $valor;
-        if ($result->num_rows > 0) {
+       // if ($result->num_rows > 0) {
             // output data of each row
-            while ($row = $result->fetch_assoc()) {
-                $valor = $row["valor"];
-            }
-        }
+           // while ($row = $result->fetch_assoc()) {
+              //  $valor = $row["valor"];
+            //}//
+        //}
 
-        if ($valor > 0) {
-            $int = (int)$valor - 1;
-        }
+      //  if ($valor > 0) {
+            //$int = (int)$valor - 1;
+        //}
         $sql = "SELECT `codigos` FROM `codigo` WHERE codigos='" . $_POST["codigo"] . "'";
 
         $resultado = $conn->query($sql);
@@ -69,12 +69,13 @@ if (!empty($_POST["submit"])) {
              VALUES ('" . $_POST["nombres"] . "', '" . $_POST["ciudad"] . "', '" . $_POST["telefono"] . "','" . $_POST["email"] .
                     "','" . desencriptar($_POST["premios"]) . "','" . $_POST["codigo"] . "')";
                 if (mysqli_query($conn, $sql)) {
-                    $sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" .desencriptar($_POST["premios"]) . "'";
+                    //$sql = "UPDATE `premio` SET `valor`='" . $int . "' WHERE `nombre`='" .desencriptar($_POST["premios"]) . "'";
+                    $sql = "INSERT INTO `dbbunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
                     if (mysqli_query($conn, $sql)) {
                         echo "<script>swal(\"Ingreso exitoso " . $_POST["nombres"] . "!\")</script>";
                     }
-                    $sql = "INSERT INTO `dbbunky`.`ingreso` (`codigo`) VALUES ('" . $_POST["codigo"] . "');";
-                    mysqli_query($conn, $sql);
+
+
                 }
             } else {
                 echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado ya fue registrado!\", \"error\");</script>";
@@ -82,9 +83,7 @@ if (!empty($_POST["submit"])) {
         } else {
             echo "<script>sweetAlert(\"Oops...\", \"El codigo ingresado es invalido, intentalo de nuevo!\", \"error\");</script>";
         }
-    } else {
-        echo "<script>sweetAlert(\"Oops...\", \"Debes ingresar tus datos personales completos!\", \"error\");</script>";
-    }
+    } 
 
 ?>
 
